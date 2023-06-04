@@ -1,0 +1,36 @@
+<ion-content [fullscreen]="true">
+  <p class="title">UPDATE YOUR DETAILS</p>
+
+  <div class="registerForm">
+    <form [formGroup]="updateForm" (ngSubmit)="submitForm()">
+      <ion-card class="card" *ngFor="let item of regInputs; let i = index">
+        <ion-card-header class="inpTitle">{{item}}</ion-card-header>
+        <ion-card-content>
+          <div class="inputDiv">
+            <ion-input class="input" formControlName="{{formCtrlName[i].name}}"></ion-input>
+          </div>
+          <div class="errorMsg"
+            *ngIf="updateForm.get(formCtrlName[i].name)!.errors?.['required'] && updateForm.get(formCtrlName[i].name)!.touched">
+            <ion-label color="danger" stacked>
+              <div class="error-container">
+                <ion-icon name="alert-circle" class="error-icon"></ion-icon>
+                <h3>Please enter your input!!!</h3>
+              </div>
+            </ion-label>
+          </div>
+          <div class="errorMsg" *ngIf="updateForm.get(formCtrlName[i].name)!.errors?.[formCtrlName[i].error]">
+            <ion-label color="danger" stacked>
+              <div class="error-container">
+                <ion-icon name="alert-circle" class="error-icon"></ion-icon>
+                <h3>Please enter a valid input!!!</h3>
+              </div>
+            </ion-label>
+          </div>
+        </ion-card-content>
+      </ion-card>
+      <div class="submit">
+        <ion-button type="submit" [disabled]="updateForm.invalid">Submit</ion-button>
+      </div>
+    </form>
+  </div>
+</ion-content>

@@ -1,0 +1,40 @@
+{
+  "users": [
+    {
+      "firstName": "Rutuja",
+      "lastName": "Lingayat",
+      "email": "rutu@co.in",
+      "id": 1
+    },
+    {
+      "id": 2,
+      "email": "janet.weaver@reqres.in",
+      "firstName": "Janet",
+      "lastName": "Weaver"
+    },
+    {
+      "firstName": "Kratik",
+      "lastName": "Sharma",
+      "email": "kartik@co.in",
+      "id": 3
+    },
+    {
+      "id": 4,
+      "email": "eve.holt@reqres.in",
+      "firstName": "Eve",
+      "lastName": "Holt"
+    },
+    {
+      "firstName": "Sharman",
+      "lastName": "Joshi",
+      "email": "sharman@co.in",
+      "id": 5
+    },
+    {
+      "id": 6,
+      "email": "tracey.ramos@reqres.in",
+      "firstName": "Tracey",
+      "lastName": "Ramos"
+    }
+  ]
+}

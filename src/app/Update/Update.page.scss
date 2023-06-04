@@ -1,0 +1,76 @@
+ion-content {
+    --background: #fff;
+}
+
+.card {
+    --background: #fff;
+    border: 0.5em rgb(29, 222, 234) groove;
+    margin-top: 3em;
+}
+
+.inpTitle {
+    font-size: 2em;
+    font-family: unica1;
+    font-weight: 800;
+}
+
+.inputDiv {
+    border: 0.5em #ff0000 outset;
+    border-radius: 0.5em;
+    box-shadow: none;
+}
+
+.input {
+    font-family: tenor;
+    margin-left: 1em;
+    font-size: 1.5em;
+}
+
+ion-input {
+    --highlight-color-focused: transparent;
+    --border-width: 0;
+}
+
+
+.title {
+    text-align: center;
+    font-size: 3em;
+    font-family: unica1;
+    font-weight: 700;
+    color: rgb(29, 234, 143);
+}
+
+.errorMsg {
+    text-align: center;
+
+    --background: #fff;
+    font-size: 18px;
+    margin-top: 0.5rem;
+    color: red;
+    margin: 4px;
+}
+
+.error-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.error-icon {
+    margin-right: 8px;
+}
+
+
+.submit {
+    display: flex;
+    justify-content: center;
+    margin-top: 1.5rem;
+
+
+    ion-button {
+        width: 60%;
+        --background: green;
+        font-family: tenor;
+        font-size: 1.5em;
+    }
+}

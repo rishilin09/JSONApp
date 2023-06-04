@@ -1,0 +1,25 @@
+<ion-content [fullscreen]="true">
+  <p class="title">USER DETAILS</p>
+  <div class="details">
+    <ion-card class="card" *ngFor="let user of Users">
+      <ion-card-header class="inpTitle">First Name</ion-card-header>
+      <h1 class="det">{{user.firstName}}</h1>
+      <ion-card-header class="inpTitle">Last Name</ion-card-header>
+      <h1 class="det">{{user.lastName}}</h1>
+      <ion-card-header class="inpTitle">Email</ion-card-header>
+      <h1 class="det">{{user.email}}</h1>
+      <div class="item-note" item-end>
+        <div>
+          <ion-button class="update" clear [routerLink]="['/update', user.id]">
+            <ion-icon name="create" style="zoom:1.5"></ion-icon>
+          </ion-button>
+        </div>
+        <div>
+          <ion-button class="remove" clear (click)="removeUser(user.id)">
+            <ion-icon name="trash" style="zoom:1.5"></ion-icon>
+          </ion-button>
+        </div>
+      </div>
+    </ion-card>
+  </div>
+</ion-content>
